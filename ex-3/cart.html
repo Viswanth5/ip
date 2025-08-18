@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Style - Cart</title>
+</head>
+<body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #1a1a2e; line-height: 1.6;">
+    <!-- Navigation -->
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background-color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+        <div class="logo">
+            <h1 style="font-size: 1.8rem; font-weight: 700; background: linear-gradient(to right, #6a00f4, #9a4dff); -webkit-background-clip: text; background-clip: text; color: transparent;">Viswa's Style</h1>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 30px;">
+            <a href="index.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; color: inherit;">Home</a>
+            <a href="shop.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; color: inherit;">Shop</a>
+            <a href="cart.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; background-color: #6a00f4; color: white;">Cart</a>
+            <a href="signin.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; color: inherit;">Sign In</a>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart" style="padding: 60px 5%; display: flex; flex-direction: column; gap: 40px;">
+        <h1 style="text-align: center; font-size: 2.5rem; background: linear-gradient(to right, #6a00f4, #9a4dff); -webkit-background-clip: text; background-clip: text; color: transparent;">Your Shopping Cart</h1>
+        <div class="cart-items" style="display: flex; flex-direction: column; gap: 20px; flex: 2;">
+            <div class="cart-item" style="display: flex; background-color: white; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); gap: 20px;">
+                <img src="images/shoe.jpg" alt="Premium Shoes" style="width: 150px; height: 150px; object-fit: cover; border-radius: 5px;">
+                <div class="item-details" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 style="font-size: 1.3rem;">Premium Shoes</h3>
+                    <p style="font-weight: 600; color: #6a00f4;">$89.99</p>
+                    <div class="quantity" style="display: flex; align-items: center; gap: 10px;">
+                        <button style="width: 30px; height: 30px; border: 1px solid #e9ecef; background-color: white; border-radius: 5px; cursor: pointer;">-</button>
+                        <span>1</span>
+                        <button style="width: 30px; height: 30px; border: 1px solid #e9ecef; background-color: white; border-radius: 5px; cursor: pointer;">+</button>
+                    </div>
+                    <button class="remove-btn" style="align-self: flex-start; background-color: #ff6b6b; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; transition: all 0.3s ease;">Remove</button>
+                </div>
+            </div>
+            <div class="cart-item" style="display: flex; background-color: white; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); gap: 20px;">
+                <img src="images/shirt.jpg" alt="Formal Shirt" style="width: 150px; height: 150px; object-fit: cover; border-radius: 5px;">
+                <div class="item-details" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h3 style="font-size: 1.3rem;">Formal Shirt</h3>
+                    <p style="font-weight: 600; color: #6a00f4;">$49.99</p>
+                    <div class="quantity" style="display: flex; align-items: center; gap: 10px;">
+                        <button style="width: 30px; height: 30px; border: 1px solid #e9ecef; background-color: white; border-radius: 5px; cursor: pointer;">-</button>
+                        <span>2</span>
+                        <button style="width: 30px; height: 30px; border: 1px solid #e9ecef; background-color: white; border-radius: 5px; cursor: pointer;">+</button>
+                    </div>
+                    <button class="remove-btn" style="align-self: flex-start; background-color: #ff6b6b; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer; transition: all 0.3s ease;">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-summary" style="background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); align-self: flex-start; width: 100%; max-width: 400px; margin: 0 auto;">
+            <h2 style="margin-bottom: 20px; font-size: 1.5rem; color: #6a00f4;">Order Summary</h2>
+            <div class="summary-row" style="display: flex; justify-content: space-between; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #e9ecef;">
+                <span>Subtotal</span>
+                <span>$189.97</span>
+            </div>
+            <div class="summary-row" style="display: flex; justify-content: space-between; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #e9ecef;">
+                <span>Shipping</span>
+                <span>$9.99</span>
+            </div>
+            <div class="summary-row total" style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1.2rem; border-bottom: none;">
+                <span>Total</span>
+                <span>$199.96</span>
+            </div>
+            <a href="#" class="btn checkout-btn" style="display: inline-block; padding: 15px; font-size: 1.1rem; width: 100%; text-align: center; margin-top: 20px;">Proceed to Checkout</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #1a1a2e; color: white; padding: 60px 5% 20px;">
+        <div class="footer-content" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; max-width: 1200px; margin: 0 auto;">
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: #9a4dff;">Viswa's Style</h3>
+                <p style="margin-bottom: 10px; display: block; color: #ddd;">Premium fashion for the modern lifestyle</p>
+            </div>
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: #9a4dff;">Quick Links</h3>
+                <a href="index.html" style="margin-bottom: 10px; display: block; color: #ddd;">Home</a>
+                <a href="shop.html" style="margin-bottom: 10px; display: block; color: #ddd;">Shop</a>
+                <a href="cart.html" style="margin-bottom: 10px; display: block; color: #ddd;">Cart</a>
+                <a href="signin.html" style="margin-bottom: 10px; display: block; color: #ddd;">Sign In</a>
+            </div>
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: #9a4dff;">Contact</h3>
+                <p style="margin-bottom: 10px; display: block; color: #ddd;">Email: info@Viswa's style.com</p>
+                <p style="margin-bottom: 10px; display: block; color: #ddd;">Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="copyright" style="text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #aaa;">
+            <p>&copy; 2025  Style. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

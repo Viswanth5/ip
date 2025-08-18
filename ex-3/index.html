@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viswa's Style - Home</title>
+</head>
+<body style="margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #1a1a2e; line-height: 1.6;">
+    <!-- Navigation -->
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background-color: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100;">
+        <div class="logo">
+            <h1 style="font-size: 1.8rem; font-weight: 700; background: linear-gradient(to right, #6a00f4, #9a4dff); -webkit-background-clip: text; background-clip: text; color: transparent;">Viswa's Style</h1>
+        </div>
+        <div class="nav-links" style="display: flex; gap: 30px;">
+            <a href="index.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; background-color: #6a00f4; color: white;">Home</a>
+            <a href="shop.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; color: inherit;">Shop</a>
+            <a href="cart.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; color: inherit;">Cart</a>
+            <a href="signin.html" style="font-weight: 500; padding: 8px 12px; border-radius: 5px; transition: all 0.3s ease; color: inherit;">Sign In</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 70vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/hero-bg.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white;">
+        <div class="hero-content">
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">Welcome to Viswa's Style</h1>
+            <p style="font-size: 1.2rem; margin-bottom: 30px;">Your premium destination for fashion and lifestyle</p>
+            <a href="shop.html" style="display: inline-block; padding: 10px 20px; background-color: #6a00f4; color: white; border-radius: 5px; transition: all 0.3s ease; border: none; cursor: pointer; font-weight: 500;">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" style="padding: 60px 5%; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; background: linear-gradient(to right, #6a00f4, #9a4dff); -webkit-background-clip: text; background-clip: text; color: transparent;">Featured Products</h2>
+        <div class="products-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; padding: 0 5%;">
+            <div class="product-card" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                <img src="images/shoe.jpg" alt="Designer Shoes" style="width: 100%; height: 300px; object-fit: cover;">
+                <h3 style="font-size: 1.3rem; margin: 15px 0 5px; padding: 0 15px;">Premium Shoes</h3>
+                <p style="color: #6a00f4; font-weight: 600; padding: 0 15px 15px;">$89.99</p>
+                <a href="cart.html" style="display: inline-block; padding: 10px 20px; background-color: #6a00f4; color: white; border-radius: 5px; transition: all 0.3s ease; border: none; cursor: pointer; font-weight: 500; margin: 0 15px 15px; width: calc(100% - 30px); text-align: center;">Add to Cart</a>
+            </div>
+            <div class="product-card" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                <img src="images/shirt.jpg" alt="Formal Shirt" style="width: 100%; height: 300px; object-fit: cover;">
+                <h3 style="font-size: 1.3rem; margin: 15px 0 5px; padding: 0 15px;">Formal Shirt</h3>
+                <p style="color: #6a00f4; font-weight: 600; padding: 0 15px 15px;">$49.99</p>
+                <a href="cart.html" style="display: inline-block; padding: 10px 20px; background-color: #6a00f4; color: white; border-radius: 5px; transition: all 0.3s ease; border: none; cursor: pointer; font-weight: 500; margin: 0 15px 15px; width: calc(100% - 30px); text-align: center;">Add to Cart</a>
+            </div>
+            <div class="product-card" style="background-color: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+                <img src="images/hoodie.jpg" alt="Comfort Hoodie" style="width: 100%; height: 300px; object-fit: cover;">
+                <h3 style="font-size: 1.3rem; margin: 15px 0 5px; padding: 0 15px;">Comfort Hoodie</h3>
+                <p style="color: #6a00f4; font-weight: 600; padding: 0 15px 15px;">$59.99</p>
+                <a href="cart.html" style="display: inline-block; padding: 10px 20px; background-color: #6a00f4; color: white; border-radius: 5px; transition: all 0.3s ease; border: none; cursor: pointer; font-weight: 500; margin: 0 15px 15px; width: calc(100% - 30px); text-align: center;">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" style="padding: 60px 5%; background-color: white; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; background: linear-gradient(to right, #6a00f4, #9a4dff); -webkit-background-clip: text; background-clip: text; color: transparent;">Our Location</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: #6a00f4;">Visit Us in Madurai</h3>
+                <p style="margin-bottom: 20px;">123 Fashion Street, Madurai, Tamil Nadu 625001</p>
+                
+                <!-- Madurai Map Image -->
+                <div style="height: 300px; width: 100%; border-radius: 8px; overflow: hidden; margin: 0 auto;">
+                    <img src="https://www.addressofchoice.com/aoc_assets/location/1537169216_Vilangudi.png" 
+                         alt="Map of Madurai" 
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+                    We're located in the heart of Madurai city, near the famous Meenakshi Temple.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #1a1a2e; color: white; padding: 60px 5% 20px;">
+        <div class="footer-content" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 40px; max-width: 1200px; margin: 0 auto;">
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: #9a4dff;">Viswa's Style</h3>
+                <p style="margin-bottom: 10px; display: block; color: #ddd;">Premium fashion for the modern lifestyle</p>
+            </div>
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: #9a4dff;">Quick Links</h3>
+                <a href="index.html" style="margin-bottom: 10px; display: block; color: #ddd;">Home</a>
+                <a href="shop.html" style="margin-bottom: 10px; display: block; color: #ddd;">Shop</a>
+                <a href="cart.html" style="margin-bottom: 10px; display: block; color: #ddd;">Cart</a>
+                <a href="signin.html" style="margin-bottom: 10px; display: block; color: #ddd;">Sign In</a>
+            </div>
+            <div class="footer-section" style="flex: 1; min-width: 250px;">
+                <h3 style="font-size: 1.3rem; margin-bottom: 20px; color: #9a4dff;">Contact</h3>
+                <p style="margin-bottom: 10px; display: block; color: #ddd;">Email: info@vishwastyle.com</p>
+                <p style="margin-bottom: 10px; display: block; color: #ddd;">Phone: (123) 456-7890</p>
+                <p style="margin-bottom: 10px; display: block; color: #ddd;">Address: 123 Fashion Street, Madurai</p>
+            </div>
+        </div>
+        <div class="copyright" style="text-align: center; margin-top: 60px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #aaa;">
+            <p>&copy; 2025 Viswa's Style. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
